@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Runtime.InteropServices;
 
 public class TestSquish : MonoBehaviour {
 	public Material target;
@@ -13,13 +14,13 @@ public class TestSquish : MonoBehaviour {
 		int height = srcTex.height;
 		int blockSize = Squish.Squish.GetStorageRequirements(width, height, (int)Squish.Squish.Flags.kDxt1);
 
+		byte[] block = new byte[blockSize];
 		byte[] rgba = new byte[width * height * 4];
 		var srcColors = srcTex.GetPixels32();
 		for (var y = 0; y < height; y++) {
 			for (var x = 0; x < width; x++) {
 				var index = 4 * (x + y * width);
 				var c = srcColors[x + y * width];
-				var four = x % 4;
 				rgba[index]		= c.r;
 				rgba[index + 1] = c.g;
 				rgba[index + 2] = c.b;
@@ -27,11 +28,18 @@ public class TestSquish : MonoBehaviour {
 			}
 		}
 
-		byte[] block = new byte[blockSize];
 		var startTime = Time.realtimeSinceStartup;
-		var counter = 0;
-		for (var i = 0; i < 100; i++) 
-			Squish.Squish.CompressImage(rgba, width, height, block, (int)Squish.Squish.Flags.kDxt1);
+		var ptrRgba = Marshal.AllocHGlobal(rgba.Length);
+		var ptrBlock = Marshal.AllocHGlobal(block.Length);
+		try {
+			Marshal.Copy(rgba, 0, ptrRgba, rgba.Length);
+			for (var i = 0; i < 10; i++) 
+				Squish.Squish.CompressImage(ptrRgba, width, height, ptrBlock, (int)Squish.Squish.Flags.kDxt1);
+			Marshal.Copy(ptrBlock, block, 0, block.Length);
+		} finally {
+			Marshal.FreeHGlobal(ptrRgba);
+			Marshal.FreeHGlobal(ptrBlock);
+		}
 		var endTime = Time.realtimeSinceStartup;
 		Debug.Log("Elapsed : " + (endTime - startTime));
 
