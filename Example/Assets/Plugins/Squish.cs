@@ -2,7 +2,7 @@
 
 namespace Squish {
 	public class Squish {
-		public const string DLL_NAME = "squish";
+		public const string DLL_NAME = "csquish";
 
 		public enum Flags {
 			//! Use DXT1 compression.

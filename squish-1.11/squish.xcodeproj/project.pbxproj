@@ -55,6 +55,29 @@
 		13CD64C2092BCF8A00488C97 /* simd.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CD64C0092BCF8A00488C97 /* simd.h */; settings = {ATTRIBUTES = (); }; };
 		13D0DC910931F93A00909807 /* simd_ve.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D0DC900931F93A00909807 /* simd_ve.h */; settings = {ATTRIBUTES = (); }; };
 		13D0DC970931F9D600909807 /* simd_sse.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D0DC960931F9D600909807 /* simd_sse.h */; settings = {ATTRIBUTES = (); }; };
+		8F387A0918595BC9009005B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F387A0718595BC9009005B8 /* InfoPlist.strings */; };
+		8F387A0E18595C13009005B8 /* alpha.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 133FA0DB096A7B8E0050752E /* alpha.cpp */; };
+		8F387A0F18595C16009005B8 /* clusterfit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1350D70B092AA857005EE038 /* clusterfit.cpp */; };
+		8F387A1018595C18009005B8 /* colourfit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13A7CCA30952BE63001C963A /* colourfit.cpp */; };
+		8F387A1118595C1E009005B8 /* colourset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 13C4C7AB0941C18000AC5B89 /* colourset.cpp */; };
+		8F387A1218595C1F009005B8 /* colourblock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1350D70F092AA858005EE038 /* colourblock.cpp */; };
+		8F387A1318595C20009005B8 /* maths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1350D712092AA858005EE038 /* maths.cpp */; };
+		8F387A1418595C24009005B8 /* rangefit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1350D716092AA858005EE038 /* rangefit.cpp */; };
+		8F387A1518595C26009005B8 /* singlecolourfit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 139C234E09B0602700A2500D /* singlecolourfit.cpp */; };
+		8F387A1618595C29009005B8 /* squish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1350D718092AA858005EE038 /* squish.cpp */; };
+		8F387A1C18595CE4009005B8 /* squish.h in Headers */ = {isa = PBXBuildFile; fileRef = 1350D719092AA858005EE038 /* squish.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F387A1D18595CEC009005B8 /* clusterfit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1350D70C092AA858005EE038 /* clusterfit.h */; };
+		8F387A1E18595CF1009005B8 /* colourfit.h in Headers */ = {isa = PBXBuildFile; fileRef = 13A7CCA20952BE63001C963A /* colourfit.h */; };
+		8F387A1F18595CF3009005B8 /* colourset.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C4C7AC0941C18000AC5B89 /* colourset.h */; };
+		8F387A2018595CF6009005B8 /* colourblock.h in Headers */ = {isa = PBXBuildFile; fileRef = 1350D710092AA858005EE038 /* colourblock.h */; };
+		8F387A2118595CF8009005B8 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 1350D711092AA858005EE038 /* config.h */; };
+		8F387A2218595CF9009005B8 /* maths.h in Headers */ = {isa = PBXBuildFile; fileRef = 1350D713092AA858005EE038 /* maths.h */; };
+		8F387A2318595CFC009005B8 /* rangefit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1350D717092AA858005EE038 /* rangefit.h */; };
+		8F387A2418595CFD009005B8 /* simd.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CD64C0092BCF8A00488C97 /* simd.h */; };
+		8F387A2518595CFF009005B8 /* simd_sse.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D0DC960931F9D600909807 /* simd_sse.h */; };
+		8F387A2618595D02009005B8 /* simd_ve.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D0DC900931F93A00909807 /* simd_ve.h */; };
+		8F387A2718595D06009005B8 /* singlecolourfit.h in Headers */ = {isa = PBXBuildFile; fileRef = 139C234D09B0602700A2500D /* singlecolourfit.h */; };
+		8F387A2818595D09009005B8 /* singlecolourlookup.inl in Headers */ = {isa = PBXBuildFile; fileRef = 139C236D09B060A900A2500D /* singlecolourlookup.inl */; };
 		8F7AC8A118585EA500A1217F /* squish.h in Headers */ = {isa = PBXBuildFile; fileRef = 1350D719092AA858005EE038 /* squish.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -108,6 +131,11 @@
 		13CD64C0092BCF8A00488C97 /* simd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simd.h; sourceTree = "<group>"; };
 		13D0DC900931F93A00909807 /* simd_ve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simd_ve.h; sourceTree = "<group>"; };
 		13D0DC960931F9D600909807 /* simd_sse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = simd_sse.h; sourceTree = "<group>"; };
+		8F387A0018595BC8009005B8 /* csquish.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = csquish.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F387A0218595BC9009005B8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		8F387A0618595BC9009005B8 /* csquish-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "csquish-Info.plist"; sourceTree = "<group>"; };
+		8F387A0818595BC9009005B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8F387A0A18595BC9009005B8 /* csquish-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "csquish-Prefix.pch"; sourceTree = "<group>"; };
 		D2AAC046055464E500DB518D /* libsquish.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsquish.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -142,6 +170,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F3879FD18595BC8009005B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D289987405E68DCB004EDB86 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,6 +192,8 @@
 			children = (
 				08FB7795FE84155DC02AAC07 /* Source */,
 				C6A0FF2B0290797F04C91782 /* Documentation */,
+				8F387A0418595BC9009005B8 /* csquish */,
+				8F387A0118595BC9009005B8 /* Frameworks */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 				133427870ACC587F00F54FA3 /* squish-Info.plist */,
 			);
@@ -205,8 +242,35 @@
 				1342B4370999E07C00152915 /* squishtest */,
 				139C21C409ADAA7000A2500D /* squishgen */,
 				133427860ACC587F00F54FA3 /* squish.framework */,
+				8F387A0018595BC8009005B8 /* csquish.bundle */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8F387A0118595BC9009005B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F387A0218595BC9009005B8 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F387A0418595BC9009005B8 /* csquish */ = {
+			isa = PBXGroup;
+			children = (
+				8F387A0518595BC9009005B8 /* Supporting Files */,
+			);
+			path = csquish;
+			sourceTree = "<group>";
+		};
+		8F387A0518595BC9009005B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F387A0618595BC9009005B8 /* csquish-Info.plist */,
+				8F387A0718595BC9009005B8 /* InfoPlist.strings */,
+				8F387A0A18595BC9009005B8 /* csquish-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		C6A0FF2B0290797F04C91782 /* Documentation */ = {
@@ -236,6 +300,26 @@
 				1334279D0ACC58ED00F54FA3 /* simd_sse.h in Headers */,
 				1334279E0ACC58ED00F54FA3 /* simd_ve.h in Headers */,
 				133427A00ACC58ED00F54FA3 /* singlecolourfit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F387A1B18595CDE009005B8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F387A1C18595CE4009005B8 /* squish.h in Headers */,
+				8F387A2518595CFF009005B8 /* simd_sse.h in Headers */,
+				8F387A2418595CFD009005B8 /* simd.h in Headers */,
+				8F387A2318595CFC009005B8 /* rangefit.h in Headers */,
+				8F387A2218595CF9009005B8 /* maths.h in Headers */,
+				8F387A2118595CF8009005B8 /* config.h in Headers */,
+				8F387A2018595CF6009005B8 /* colourblock.h in Headers */,
+				8F387A1D18595CEC009005B8 /* clusterfit.h in Headers */,
+				8F387A1E18595CF1009005B8 /* colourfit.h in Headers */,
+				8F387A1F18595CF3009005B8 /* colourset.h in Headers */,
+				8F387A2618595D02009005B8 /* simd_ve.h in Headers */,
+				8F387A2718595D06009005B8 /* singlecolourfit.h in Headers */,
+				8F387A2818595D09009005B8 /* singlecolourlookup.inl in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +414,24 @@
 			productReference = 139C21C409ADAA7000A2500D /* squishgen */;
 			productType = "com.apple.product-type.tool";
 		};
+		8F3879FF18595BC8009005B8 /* csquish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F387A0B18595BC9009005B8 /* Build configuration list for PBXNativeTarget "csquish" */;
+			buildPhases = (
+				8F387A1B18595CDE009005B8 /* Headers */,
+				8F3879FC18595BC8009005B8 /* Sources */,
+				8F3879FD18595BC8009005B8 /* Frameworks */,
+				8F3879FE18595BC8009005B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = csquish;
+			productName = csquish;
+			productReference = 8F387A0018595BC8009005B8 /* csquish.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		D2AAC045055464E500DB518D /* libsquish */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB91EB08733DB70010E9CD /* Build configuration list for PBXNativeTarget "libsquish" */;
@@ -370,6 +472,7 @@
 				1342B4360999E07C00152915 /* squishtest */,
 				139C21C309ADAA7000A2500D /* squishgen */,
 				133427850ACC587F00F54FA3 /* squish */,
+				8F3879FF18595BC8009005B8 /* csquish */,
 			);
 		};
 /* End PBXProject section */
@@ -379,6 +482,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F3879FE18595BC8009005B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F387A0918595BC9009005B8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +536,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F3879FC18595BC8009005B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F387A1618595C29009005B8 /* squish.cpp in Sources */,
+				8F387A1518595C26009005B8 /* singlecolourfit.cpp in Sources */,
+				8F387A1418595C24009005B8 /* rangefit.cpp in Sources */,
+				8F387A1318595C20009005B8 /* maths.cpp in Sources */,
+				8F387A1218595C1F009005B8 /* colourblock.cpp in Sources */,
+				8F387A0E18595C13009005B8 /* alpha.cpp in Sources */,
+				8F387A0F18595C16009005B8 /* clusterfit.cpp in Sources */,
+				8F387A1018595C18009005B8 /* colourfit.cpp in Sources */,
+				8F387A1118595C1E009005B8 /* colourset.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2AAC044055464E500DB518D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -456,11 +583,22 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		8F387A0718595BC9009005B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F387A0818595BC9009005B8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		133427890ACC587F00F54FA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -474,6 +612,7 @@
 				INFOPLIST_FILE = "squish-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACH_O_TYPE = mh_dylib;
 				OTHER_CFLAGS = "$(SQUISH_CFLAGS_$(CURRENT_ARCH))";
 				PRODUCT_NAME = squish;
 				SDKROOT = macosx;
@@ -487,7 +626,7 @@
 		1334278A0ACC587F00F54FA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -499,6 +638,7 @@
 				INFOPLIST_FILE = "squish-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACH_O_TYPE = mh_dylib;
 				OTHER_CFLAGS = "$(SQUISH_CFLAGS_$(CURRENT_ARCH))";
 				PRODUCT_NAME = squish;
 				SDKROOT = macosx;
@@ -681,6 +821,91 @@
 			};
 			name = Release;
 		};
+		8F387A0C18595BC9009005B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse3;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "csquish/csquish-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "csquish/csquish-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LLVM_LTO = NO;
+				LLVM_VECTORIZE_LOOPS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-read_only_relocs",
+					suppress,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		8F387A0D18595BC9009005B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_X86_VECTOR_INSTRUCTIONS = sse3;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "csquish/csquish-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "csquish/csquish-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LLVM_LTO = YES;
+				LLVM_VECTORIZE_LOOPS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_LDFLAGS = (
+					"-read_only_relocs",
+					suppress,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -734,6 +959,15 @@
 			buildConfigurations = (
 				1DEB91F008733DB70010E9CD /* Debug */,
 				1DEB91F108733DB70010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F387A0B18595BC9009005B8 /* Build configuration list for PBXNativeTarget "csquish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F387A0C18595BC9009005B8 /* Debug */,
+				8F387A0D18595BC9009005B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

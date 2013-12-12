@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>csquish.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>libsquish.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -48,6 +53,11 @@
 			<true/>
 		</dict>
 		<key>139C21C309ADAA7000A2500D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F3879FF18595BC8009005B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

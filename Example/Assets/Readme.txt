@@ -1,2 +1,0 @@
-/Applications/Unity4.3/Unity.app/Contents/Frameworks/Mono/etc/mono/config  に以下のような行を追加:
-<dllmap os="osx" dll="squish" target="/Users/nnakata/Documents/GitHub/LibsquishNet/Assets/Plugins/squish.framework/squish"/>

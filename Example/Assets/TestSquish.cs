@@ -28,10 +28,16 @@ public class TestSquish : MonoBehaviour {
 		}
 
 		byte[] block = new byte[blockSize];
-		Squish.Squish.CompressImage(rgba, width, height, block, (int)Squish.Squish.Flags.kDxt1);
+		var startTime = Time.realtimeSinceStartup;
+		var counter = 0;
+		for (var i = 0; i < 100; i++) 
+			Squish.Squish.CompressImage(rgba, width, height, block, (int)Squish.Squish.Flags.kDxt1);
+		var endTime = Time.realtimeSinceStartup;
+		Debug.Log("Elapsed : " + (endTime - startTime));
+
 		_dstTex = new Texture2D(width, height, TextureFormat.DXT1, false);
 		_dstTex.LoadRawTextureData(block);
-		_dstTex.filterMode = FilterMode.Point;
+		//_dstTex.filterMode = FilterMode.Point;
 		_dstTex.Apply(false);
 
 		target.mainTexture = _dstTex;
